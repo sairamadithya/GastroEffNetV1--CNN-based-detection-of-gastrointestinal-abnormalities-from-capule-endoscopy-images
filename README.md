@@ -1,0 +1,1 @@
+# GastroEffNetV1--CNN-based-detection-of-gastrointestinal-abnormalities-from-capule-endoscopy-images

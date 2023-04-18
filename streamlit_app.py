@@ -51,7 +51,7 @@ if option=='SECTION 1-Introduction':
 elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy':
     @st.cache(allow_output_mutation=True)
     def load_model():
-        model=tf.keras.models.load_model(r"D:\medical datasets\capsule endoscopy.h5")
+        model=tf.keras.models.load_model(r"capsule endoscopy.h5")
         return model
     with st.spinner('Model is being loaded..'):
         model=load_model()

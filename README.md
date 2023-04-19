@@ -14,4 +14,4 @@ Conclusion: Hence the GastroEffNetV1 could be used to identify the different gas
 
 Pre-print link:- https://www.researchsquare.com/article/rs-2588671/v1
 
-Website link:-
+Website link:- https://sairamadithya-gastroeffnetv1--cnn-based-de-streamlit-app-1a4xd5.streamlit.app/

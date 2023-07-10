@@ -31,11 +31,11 @@ html_temp = """
 st.markdown(html_temp,unsafe_allow_html=True)
 st.write(' ')
 st.write(' ')
-html_temp1 = """ 
-  <div style="background-color:#ABBAEA ;padding:6px;">
-  <h2 style="color:white;text-align:center;">CENTER OF EXCELLENCE IN MEDICAL IMAGING</h2>
-  </div>
-  """ 
+#html_temp1 = """ 
+#  <div style="background-color:#ABBAEA ;padding:6px;">
+#  <h2 style="color:white;text-align:center;">CENTER OF EXCELLENCE IN MEDICAL IMAGING</h2>
+#  </div>
+#  """ 
 #st.markdown(html_temp1,unsafe_allow_html=True)
 activities=['SECTION 1-Introduction','SECTION 2-Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy','SECTION 3- About the team']
 option=st.sidebar.selectbox('choose the options displayed below',activities) 

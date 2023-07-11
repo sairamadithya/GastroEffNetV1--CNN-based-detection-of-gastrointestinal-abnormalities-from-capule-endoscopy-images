@@ -57,6 +57,12 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
     with st.spinner('Model is being loaded..'):
         model=load_model()
     st.subheader('Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy')
+    st.write('   ')
+    st.write('   ')
+    st.write('   ')
+    st.write('   ')
+    st.write('   ') 
+    st.write('   ')
     file = st.file_uploader("Please upload any image from the local machine in case of computer or upload camera image in case of mobile.", type=["jpg", "png","jpeg"])
     st.set_option('deprecation.showfileUploaderEncoding', False)
     if file is None:

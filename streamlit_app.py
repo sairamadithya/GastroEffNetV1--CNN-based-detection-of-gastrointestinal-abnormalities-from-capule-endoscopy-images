@@ -56,7 +56,7 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
         return model
     with st.spinner('Model is being loaded..'):
         model=load_model()
-    st.subheader('Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy')
+    st.header('Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy')
     st.write('   ')
     st.write('   ')
     st.write('   ')

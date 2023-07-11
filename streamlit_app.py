@@ -23,12 +23,12 @@ st.markdown(
          """,
          unsafe_allow_html=True
      )
-html_temp = """ 
-  <div style="background-color:pink ;padding:6px;">
-  <h2 style="color:white;text-align:center;">GastroEffNetV1- CNN based Automated detection of Gastrointestinal abnormalities from capsule endoscopy images</h2>
-  </div>
+#html_temp = """ 
+#  <div style="background-color:pink ;padding:6px;">
+#  <h2 style="color:white;text-align:center;">GastroEffNetV1- CNN based Automated detection of Gastrointestinal abnormalities from capsule endoscopy images</h2>
+#  </div>
   """ 
-st.markdown(html_temp,unsafe_allow_html=True)
+#st.markdown(html_temp,unsafe_allow_html=True)
 st.write(' ')
 st.write(' ')
 #html_temp1 = """ 
@@ -39,7 +39,7 @@ st.write(' ')
 #st.markdown(html_temp1,unsafe_allow_html=True)
 activities=['SECTION 1-Introduction','SECTION 2-Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy','SECTION 3- About the team']
 option=st.sidebar.selectbox('choose the options displayed below',activities) 
-st.subheader(option) 
+#st.subheader(option) 
 if option=='SECTION 1-Introduction':
     st.subheader('This website can predict the following gastrointestinal abnormalities from capsule endoscopy images using deep learning algorithms.')
     st.subheader('1. Polyp')
@@ -49,12 +49,14 @@ if option=='SECTION 1-Introduction':
     st.subheader('3. Esophagitis')
     st.write("Esophagitis is inflammation of the esophagus. Esophagitis can cause painful, difficult swallowing and chest pain.")
 elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy':
+         
     @st.cache(allow_output_mutation=True)
     def load_model():
         model=tf.keras.models.load_model(r"capsule endoscopy.h5")
         return model
     with st.spinner('Model is being loaded..'):
         model=load_model()
+    st.subheader('Deep learning tool for detection of gastrointestinal abnormalities using capsule endoscopy')
     file = st.file_uploader("Please upload any image from the local machine in case of computer or upload camera image in case of mobile.", type=["jpg", "png","jpeg"])
     st.set_option('deprecation.showfileUploaderEncoding', False)
     if file is None:

@@ -27,7 +27,7 @@ st.markdown(
 #  <div style="background-color:pink ;padding:6px;">
 #  <h2 style="color:white;text-align:center;">GastroEffNetV1- CNN based Automated detection of Gastrointestinal abnormalities from capsule endoscopy images</h2>
 #  </div>
-  """ 
+#  """ 
 #st.markdown(html_temp,unsafe_allow_html=True)
 st.write(' ')
 st.write(' ')

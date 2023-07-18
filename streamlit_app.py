@@ -98,8 +98,8 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
   """ ,unsafe_allow_html=True)
         else:
             st.markdown(""" 
-  <div style="background-color: green;padding:3px;border: 3px solid;">
-  <h2 style="color:white;text-align:center;">No pathology detected!!</h2>
+  <div style="background-color: red;padding:3px;border: 3px solid;">
+  <h2 style="color:white;text-align:center;">The predicted pathology is esophagitis!!</h2>
   </div>
   """ ,unsafe_allow_html=True)
 elif option=='SECTION 3- About the team':

@@ -15,7 +15,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-color: rgb(209, 209, 209) ;
+             background-color: rgb(132, 148, 173) ;
              background-attachment: fixed;
              background-size: cover
          }}
@@ -75,6 +75,12 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
         predictions = model.predict(imaga)
      #predictions = import_and_predict(image, model)
         a=np.argmax(predictions,axis=1)
+    st.write('   ')
+    st.write('   ')
+    st.write('   ')
+    st.write('   ')
+    st.write('   ') 
+    st.write('   ')
     if st.button('predict pathology'):
         if a==0:
             st.markdown(""" 

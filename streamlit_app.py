@@ -67,7 +67,7 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
     st.set_option('deprecation.showfileUploaderEncoding', False)
     if file is not None:
         img = Image.open(file)
-        st.image(img, use_column_width=True)
+        st.image(img, use_column_width=False)
         size = (224,224)    
         image = ImageOps.fit(img, size, Image.ANTIALIAS)
         imag = np.asarray(image)

@@ -15,7 +15,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg");
+             background-color: rgb(209, 209, 209) ;
              background-attachment: fixed;
              background-size: cover
          }}
@@ -63,7 +63,7 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
     st.write('   ')
     st.write('   ') 
     st.write('   ')
-    file = st.file_uploader("type=["jpg", "png","jpeg"])
+    file = st.file_uploader("",type=["jpg", "png","jpeg"])
     st.set_option('deprecation.showfileUploaderEncoding', False)
     if file is not None:
         img = Image.open(file)

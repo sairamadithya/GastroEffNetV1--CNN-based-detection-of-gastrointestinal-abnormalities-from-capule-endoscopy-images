@@ -63,11 +63,9 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
     st.write('   ')
     st.write('   ') 
     st.write('   ')
-    file = st.file_uploader("Please upload any image from the local machine in case of computer or upload camera image in case of mobile.", type=["jpg", "png","jpeg"])
+    file = st.file_uploader("type=["jpg", "png","jpeg"])
     st.set_option('deprecation.showfileUploaderEncoding', False)
-    if file is None:
-         st.text("Please upload an image file within the allotted file size")
-    else:
+    if file is not None:
         img = Image.open(file)
         st.image(img, use_column_width=True)
         size = (224,224)    

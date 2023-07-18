@@ -77,10 +77,6 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
         a=np.argmax(predictions,axis=1)
     st.write('   ')
     st.write('   ')
-    st.write('   ')
-    st.write('   ')
-    st.write('   ') 
-    st.write('   ')
     if st.button('predict pathology'):
         if a==0:
             st.markdown(""" 

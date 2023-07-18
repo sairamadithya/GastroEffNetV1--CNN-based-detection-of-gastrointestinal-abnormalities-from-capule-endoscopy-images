@@ -87,12 +87,12 @@ elif option=='SECTION 2-Deep learning tool for detection of gastrointestinal abn
         elif a==1:
             st.markdown(""" 
   <div style="background-color: red;padding:3px;border: 3px solid;">
-  <h2 style="color:white;text-align:center;">The predicted pathology is ulcerative colitis!!</h2>
+  <h2 style="color:white;text-align:center;">The predicted pathology is ulcerative colitis</h2>
   </div>
   """ ,unsafe_allow_html=True)
         elif a==2:
             st.markdown(""" 
-  <div style="background-color: rgb(200,0,0);padding:3px;border: 3px solid;">
+  <div style="background-color: red;padding:3px;border: 3px solid;">
   <h2 style="color:white;text-align:center;">The predicted pathology is polyp</h2>
   </div>
   """ ,unsafe_allow_html=True)
